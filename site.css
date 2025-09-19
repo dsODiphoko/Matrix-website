@@ -296,3 +296,54 @@ width: 80%;
 
 /*End Container*/
 
+.text-base-bold {
+  font-size: 45px;
+  font-weight: 700;
+  font-style: normal;
+  color: rgb(0, 0, 0);
+  font-kerning: normal;
+  text-decoration: none;
+  line-height: 1.1;
+}
+
+.matrix-text {
+  font-size: 14px;
+  line-height: 29px;
+  letter-spacing: 0em;
+  text-transform: none;
+  list-style-type: none;
+  font-weight: 400;
+  font-style: normal;
+  font-kerning: none;
+  text-decoration: none;
+}
+
+
+.header-normal-text {
+  font-size: 17px;
+  line-height: 29px;
+  letter-spacing: 0em;
+  text-transform: none;
+  list-style-type: none;
+  font-weight: 400;
+  font-style: normal;
+  font-kerning: none;
+  text-decoration: none;
+}
+
+.matrix-text-normal {
+  font-size: 40px;       
+  font-weight: 400;     
+  font-style: normal;
+  color: rgb(0, 0, 0);  
+  font-kerning: normal;
+  text-decoration: none;
+}
+
+.nav-link.active { 
+    background-color: #5e6f80 !important; 
+}
+
+.overlay-blur { 
+    backdrop-filter: blur(1px); 
+}
