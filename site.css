@@ -347,3 +347,25 @@ width: 80%;
 .overlay-blur { 
     backdrop-filter: blur(1px); 
 }
+
+
+.btn-black{
+    background-color: black;
+    color: white;
+     border: none;
+    padding: 1rem;
+}
+.btn-gray{
+    background-color: rgb(110, 110, 110);
+    color: white;
+    border: none;
+    padding: 1rem;
+}
+ 
+.p-normal{
+    font-size: 1.3rem;
+   }
+.heading-small-bold{
+    font-weight: bold;
+}
+ 
