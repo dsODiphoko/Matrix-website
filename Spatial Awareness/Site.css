@@ -1,0 +1,391 @@
+body {
+    font-family: "Poppins";
+}
+
+.fa {
+    padding: 10px;
+    font-size: 15px;
+    width: 40px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px; 
+    border-radius: 50%;
+    background-color: white;
+    color: black;
+}
+
+    .fa:hover {
+        opacity: 0.7;
+    }
+
+.footer {
+    background-color: black;
+    color: white;
+    margin: 40px auto;
+    width: 80%; /* leaves 10% margin on each side */
+}
+
+    .footer .col-sm-4 {
+        border-right: 1px solid #ccc;
+    }
+
+        .footer .col-sm-4:last-child {
+            border-right: none; /* remove line after last column */
+        }
+
+
+
+
+.navbar-collapse {
+    display: flex !important;
+    justify-content: flex-end !important;
+}
+.navbar-container {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+/* Links remain white on top of banner */
+.navbar-nav .nav-link,
+.navbar-brand,
+#searchBtn {
+    color: #FFF !important;
+    text-decoration: none !important;
+}
+
+    .navbar-nav .nav-link:hover,
+    .navbar-nav .nav-link:focus {
+        text-decoration: none !important;
+        color: #cfe2ff !important;
+    }
+
+/* On HOVER over the navbar, gently add a translucent background */
+.navbar-overlay:hover {
+    background: rgba(0,0,0,0.38); /* adjust opacity to taste */
+    /* backdrop-filter: blur(4px) saturate(115%); optional glassy feel */
+}
+
+/* Dropdown still opens on hover (unchanged) */
+.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+    border-radius: 0 !important; /* square edges */
+    border: 2px solid #FFFFFF !important; /* black border */
+    background-color: #000 !important; /* black background */
+}
+
+/* Dropdown items: white text, no hover effect */
+.dropdown-menu .dropdown-item {
+    color: #fff !important;
+    background-color: transparent !important;
+}
+
+    .dropdown-menu .dropdown-item:hover,
+    .dropdown-menu .dropdown-item:focus {
+        color: #fff !important;
+        background-color: transparent !important; /* no hover background */
+    }
+
+
+
+
+/* Keep dropdown menu readable against translucent bg */
+
+
+/* Search box behavior unchanged */
+.search-box {
+    width: 0;
+    opacity: 0;
+    transition: width .3s ease, opacity .2s ease;
+    border-radius: 20px;
+}
+
+.search-active .search-box {
+    width: 200px;
+    opacity: 1;
+    padding-left: .75rem;
+}
+
+/* Optional: ensure toggler is visible on light/dark banners */
+.navbar-toggler {
+    background-color: rgba(255,255,255,.9);
+}
+
+.banner {
+    position: relative;
+    height: 350px; /* or any height you want */
+    overflow: hidden;
+}
+
+    .banner img, .banner video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+/* Navbar floats over banner */
+.navbar-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0,0,0,0); /* transparent */
+    transition: background-color .25s ease;
+    z-index: 10;
+}
+
+    .navbar-overlay:hover {
+        background: rgba(0,0,0,0.4); /* darker on hover */
+    }
+
+
+.banner {
+    position: relative;
+    height: 750px; /* adjust as needed */
+    overflow: hidden;
+}
+
+    .banner img,
+    .banner video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+/* Transparent box in the middle */
+.banner-overlay {
+    position: absolute;
+    top: 50%;
+    left: 26%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.5); /* black with 50% transparency */
+    padding: 2rem 3rem;
+    border-radius: 0px;
+    color: #fff;
+    max-width: 80%;
+}
+
+/* Optional text styles */
+.banner-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: .5rem;
+}
+
+.banner-subtitle {
+    font-size: 1.25rem;
+    font-weight: 300;
+}
+/* Container for the two buttons */
+.cta-row {
+    gap: 5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Button-looking div */
+.cta-btn {
+    display: inline-flex;
+    gap: .75rem;
+    background: #000;
+    color: #fff;
+    border: 2px solid #000; /* solid outline; tweak if needed */
+    padding: .75rem 1.25rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform .15s ease, background-color .2s ease, border-color .2s ease, color .2s ease;
+    user-select: none;
+    text-decoration: none; /* in case used as link */
+}
+
+/* Arrow icon */
+.cta-icon {
+    width: 20px;
+    height: 20px;
+}
+
+/* Hover/Focus states */
+.cta-btn:hover,
+.cta-btn:focus {
+    transform: translateY(-1px);
+    background: #111;
+    border-color: #fff; /* subtle contrast */
+    outline: none;
+}
+
+/* Active press */
+.cta-btn:active {
+    transform: translateY(0);
+}
+
+/* Mobile: stack full-width if desired */
+@media (max-width: 576px) {
+    .cta-btn {
+        width: 100%;
+        justify-content: center;
+    }
+}
+.footer-link {
+    color: #fff !important; /* white text */
+    text-decoration: none !important; /* remove underline by default */
+}
+
+    .footer-link:hover {
+        text-decoration: underline; /* show underline on hover */
+    }
+
+
+
+div.mycontainer {
+    width: 100%;
+    overflow: auto;
+    align-content:center;
+}
+
+    div.mycontainer div {
+        padding:20px;
+        width: 40%;
+        float: left;
+    }
+
+.HomeContentDiv {
+    width: 100%; 
+    height: 300px;
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    background-position: center; 
+}
+
+
+
+
+/*For Tabbed Sections*/
+.tablink {
+    background-color: #555;
+    color: white;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 17px;
+    width: 20%;
+    font-weight: bold;
+}
+
+    .tablink:hover {
+        background-color: #777;
+    }
+
+/* Style the tab content */
+.tabcontent {
+    color: white;
+    background-color: aqua;
+    display: none;
+    padding: 50px;
+    width: 80%;
+}
+
+/*End Tabbed Section*/
+
+/*Container*/
+
+.page-container{
+width: 80%; 
+}
+
+/*End Container*/
+
+.text-base-bold {
+  font-size: 45px;
+  font-weight: 700;
+  font-style: normal;
+  color: rgb(0, 0, 0);
+  font-kerning: normal;
+  text-decoration: none;
+  line-height: 1.1;
+}
+
+.matrix-text {
+  font-size: 14px;
+  line-height: 29px;
+  letter-spacing: 0em;
+  text-transform: none;
+  list-style-type: none;
+  font-weight: 400;
+  font-style: normal;
+  font-kerning: none;
+  text-decoration: none;
+}
+
+
+.header-normal-text {
+  font-size: 17px;
+  line-height: 29px;
+  letter-spacing: 0em;
+  text-transform: none;
+  list-style-type: none;
+  font-weight: 400;
+  font-style: normal;
+  font-kerning: none;
+  text-decoration: none;
+}
+
+.matrix-text-normal {
+  font-size: 40px;       
+  font-weight: 400;     
+  font-style: normal;
+  color: rgb(0, 0, 0);  
+  font-kerning: normal;
+  text-decoration: none;
+}
+
+.nav-link.active { 
+    background-color: #5e6f80 !important; 
+}
+
+.overlay-blur { 
+    backdrop-filter: blur(1px); 
+}
+
+
+.btn-black{
+    background-color: black;
+    color: white;
+     border: none;
+    padding: 1rem;
+}
+.btn-gray{
+    background-color: rgb(110, 110, 110);
+    color: white;
+    border: none;
+    padding: 1rem;
+}
+ 
+.p-normal{
+    font-size: 1.3rem;
+   }
+.heading-small-bold{
+    font-weight: bold;
+}
+ 
+
+.square-list {
+  list-style-type: square;
+  padding-left: 1.5rem;  
+}
+
+.matrix-arrow-down {
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 15px solid black;
+    margin-bottom: 14px;
+}
+
+.matrix-straight-line {
+    width: 3px;
+    height: 80px;
+    background-color: black;
+}
