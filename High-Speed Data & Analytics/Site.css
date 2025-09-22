@@ -369,3 +369,23 @@ width: 80%;
     font-weight: bold;
 }
  
+
+.square-list {
+  list-style-type: square;
+  padding-left: 1.5rem;  
+}
+
+.matrix-arrow-down {
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 15px solid black;
+    margin-bottom: 14px;
+}
+
+.matrix-straight-line {
+    width: 3px;
+    height: 80px;
+    background-color: black;
+}
